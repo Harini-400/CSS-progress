@@ -1,0 +1,43 @@
+<!-- inline--input,button,span,etc 
+block-p,h1 to h6,li,etc
+inline-block-container(div,seciton) 
+flex-applied for only one row or column
+ grid-applied for multiple rows or columns
+none-for hiding content
+
+
+flex box-display:flex -->
+
+float-in css float property is used to adjust the content to either right or left.
+overflow-it helps to adjust the content in a small area by creating scroll. by creating scroll it carries visible ,hidden,scroll,auto.
+mediaquery-in front end we need to make a page response and user interactive 
+syntax:
+@media(screensize){
+    sector{
+        property:value;
+        property:value;
+    }
+}
+
+screensize will be defined using max-width and min-width it will be measured only in pixels 
+Break points-xs-576 px and below ,sm-576px-768px,md-768px-992px,lg-992px-1280px,1366px,xl-1366px-1580px,xxl-1580px and above 
+
+
+
+Animations effect in css-in two ways we are gonna add animations 
+1.transition-transform duration timing_function [delay]
+syntax:
+transition:transform duration timing_function [delay]
+transform: translate(x,y)-moving an element
+           scale(x,y)-zoom in or zoom out of content
+           skew(deg,deg)-slants the content
+           rotate(deg,deg)-spins the element
+Note:transitions will work on through "hover"
+2.key frame-
+syntax:
+animation:animationname duration timing_function iteration[delay]
+@keyframe animationname{duration-5 sec} 
+  0%{}  0th sec 
+  50%{}  2.5th sec 
+  100%{}  5th sec
+}

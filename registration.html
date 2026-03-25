@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+        body{
+            background: linear-gradient(to right, #e4e4d9, #215f00);
+            font-family: sans-serif;
+        }
+
+        .container{
+            width: 350px;
+            margin: 5% auto;
+            padding: 25px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        h2{
+            color: white;
+        }
+
+        label{
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            color: white;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        input[type="radio"], input[type="checkbox"]{
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button{
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password" required>
+
+        <label>Gender</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Address</label>
+        <textarea placeholder="Enter address"></textarea>
+
+        <br>
+        <input type="checkbox"> I agree to terms & conditions
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
